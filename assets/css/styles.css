@@ -94,6 +94,50 @@
     margin-left: -1rem;
 }
 
+#about header div::after {
+    content: '</h2>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: -0.5rem;
+}
+
+#about header div::before {
+    content: '<h2>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -1rem;
+    margin-left: -1rem;
+}
+
+#about #info::before {
+    content: '<p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: -1rem;
+}
+
+#about #info::after {
+    content: '</p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: -4.5rem;
+}
+
+#about #info p{
+    margin-bottom: 3em;
+}
+
 #portfolio header div::after {
     content: '</h2>';
     font-family: 'La Belle Aurore',cursive;
