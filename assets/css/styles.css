@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+
+::-webkit-scrollbar-track {
+    background: #222629; 
+}
+   
+
+::-webkit-scrollbar-thumb {
+    background: #636d74; 
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background: #e27689;
+}
+
+#top header div::before {
+    content: '<h4>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #755565;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -1rem;
+    margin-left: -1rem;
+}
+
+#top header div::after {
+    content: '</h4>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #755565;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: -0.5rem;
+}
+
+#top #info::before {
+    content: '<p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #755565;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: -1rem;
+}
+
+#top #info::after {
+    content: '</p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #755565;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: -4.5rem;
+}
+
+#top #info p{
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+#top #footerDiv::before {
+    content: '<button>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #755565;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -2.3rem;
+    margin-left: -1rem;
+}
+
+#top #footerDiv::after {
+    content: '</button>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #755565;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: 0rem;
+}
+
+#portfolio header div::before {
+    content: '<h2>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -1rem;
+    margin-left: -1rem;
+}
+
+#portfolio header div::after {
+    content: '</h2>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: -0.5rem;
+}
+
+#portfolio #info::before {
+    content: '<p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: -1rem;
+}
+
+#portfolio #info::after {
+    content: '</p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: -4.5rem;
+}
+
+#portfolio #info p{
+    margin-bottom: 3em;
+}
+
+#portfolio #sectionImg::before {
+    content: '<section>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -0.5rem;
+    margin-left: -1rem;
+}
+
+#portfolio #sectionImg::after {
+    content: '</section>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: 0.5rem;
+}
+
+#contact header div::before {
+    content: '<h2>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -1rem;
+    margin-left: -1rem;
+}
+
+#contact header div::after {
+    content: '</h2>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: -0.5rem;
+}
+
+#contact #info::before {
+    content: '<p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: -1rem;
+}
+
+#contact #info::after {
+    content: '</p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: -4.5rem;
+}
+
+#contact #info p{
+    margin-bottom: 3em;
+}
+
+#contact #form::before {
+    content: '<form>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -0.5rem;
+    margin-left: -1rem;
+}
+
+#contact #form::after {
+    content: '</form>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: -1rem;
+}
+
+.img-hover-zoom {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+  
+.img-hover-zoom img {
+    transition: transform .5s, filter 1.5s ease;
+    filter: grayscale(75%);
+}
+  
+.img-hover-zoom:hover img {
+    filter: grayscale(0);
+    transform: scale(1.1);
+}

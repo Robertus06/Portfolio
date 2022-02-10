@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FormSubmit | Roberto Herencias</title>
+    <link rel="icon" type="image/x-icon" href="../assets/resources/icon.ico">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/stylesEW.css" />
+</head>
+<body>
+	<div class="contenedor">
+		<div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<h3>Thank You!</h3>
+				<h4>The form was submitted successfully.</h4>
+				<footer>
+                    <a id="btn-abrir-popup" class="btn-abrir-popup" href="https://robertus06.github.io/Portfolio/">Return to original site</a>
+                </footer>
+			</div>
+		</div>
+	</div>
+
+	<script>
+        var overlay = document.getElementById('overlay');
+        var popup = document.getElementById('popup');
+
+        overlay.classList.add('active');
+        popup.classList.add('active');
+        window.onscroll = function(){ window.scrollTo(x, y) };
+    </script>
+</body>
+</html>
