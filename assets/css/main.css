@@ -184,6 +184,14 @@ input, select, textarea {
 		outline: 0;
 	}
 
+	.allprojects {
+		color: #E27689;
+	}
+
+	.allprojects:hover {
+		color: #ff4869;
+	}
+
 		a:hover {
 			color: #E27689;
 			border-bottom-color: rgba(255, 255, 255, 0);
@@ -2674,6 +2682,10 @@ input, select, textarea {
 			}
 
 		/* Main */
+
+			.popup .icons .icon{
+				font-size: 1.4em;
+			}
 
 			#main > section {
 				padding: 2em 0;

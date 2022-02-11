@@ -10,13 +10,20 @@
     <link rel="stylesheet" href="../assets/css/stylesEW.css" />
 </head>
 <body>
+    <script type="text/javascript">
+        function Navigate(){
+            window.location.replace('https://robertus06.github.io/Portfolio/');
+            return false;
+        }
+    </script>
+
 	<div class="contenedor">
 		<div class="overlay" id="overlay">
 			<div class="popup" id="popup">
 				<h3>Thank You!</h3>
 				<h4>The form was submitted successfully.</h4>
 				<footer>
-                    <a id="btn-abrir-popup" class="btn-abrir-popup" href="https://robertus06.github.io/Portfolio/">Return to original site</a>
+                    <a id="btn-abrir-popup" class="btn-abrir-popup" onclick="Navigate()">Return to original site</a>
                 </footer>
 			</div>
 		</div>
