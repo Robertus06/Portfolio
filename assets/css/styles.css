@@ -84,7 +84,17 @@
     margin-top: 0rem;
 }
 
-#portfolio header div::before {
+#skills header div::after {
+    content: '</h2>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: -0.5rem;
+}
+
+#skills header div::before {
     content: '<h2>';
     font-family: 'La Belle Aurore',cursive;
     color: #515152;
@@ -92,6 +102,50 @@
     position: absolute;
     margin-top: -1rem;
     margin-left: -1rem;
+}
+
+#skills #info::before {
+    content: '<p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: -1rem;
+}
+
+#skills #info::after {
+    content: '</p>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: -4.5rem;
+}
+
+#skills #info p{
+    margin-bottom: 3em;
+}
+
+#skills #sectionImg::before {
+    content: '<section>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -0.5rem;
+    margin-left: -1rem;
+}
+
+#skills #sectionImg::after {
+    content: '</section>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: 0.5rem;
 }
 
 #about header div::after {
@@ -138,6 +192,26 @@
     margin-bottom: 3em;
 }
 
+#about #sectionImg::before {
+    content: '<section>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -0.5rem;
+    margin-left: -1rem;
+}
+
+#about #sectionImg::after {
+    content: '</section>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: 0.5rem;
+}
+
 #portfolio header div::after {
     content: '</h2>';
     font-family: 'La Belle Aurore',cursive;
@@ -146,6 +220,16 @@
     position: absolute;
     margin-left: -1rem;
     margin-top: -0.5rem;
+}
+
+#portfolio header div::before {
+    content: '<h2>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -1rem;
+    margin-left: -1rem;
 }
 
 #portfolio #info::before {
@@ -264,10 +348,12 @@
   
 .img-hover-zoom img {
     transition: transform .5s, filter 1.5s ease;
-    filter: grayscale(75%);
+    /*filter: brightness(75%);*/
+    filter: grayscale(50%);
 }
   
 .img-hover-zoom:hover img {
-    filter: grayscale(0);
     transform: scale(1.1);
+    /*filter: brightness(100%);*/
+    filter: grayscale(0);
 }

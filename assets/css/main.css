@@ -2019,7 +2019,6 @@ input, select, textarea {
 
 	.icon {
 		text-decoration: none;
-		text-decoration: none;
 	}
 
 		.icon:before {
@@ -2340,6 +2339,10 @@ input, select, textarea {
 
 			#main > section.four {
 				background-color: #262A29;
+			}
+
+			#main > section.five {
+				background-color: #292D2C;
 			}
 
 /* Wide */
