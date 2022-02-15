@@ -148,6 +148,80 @@
     margin-top: 0.5rem;
 }
 
+.skillsDiv {
+    padding: 1em 0 0 1em;
+}
+
+.skills_tech {
+    margin: 0 0 0 0;
+}
+
+.skills_bar, .skills_bar::after {
+    position: relative;
+    width: 100%;
+    height: 0.2em;
+    background-color: #323535;
+    overflow: hidden;
+}
+
+.skills_bar::after {
+    content: "";
+    left: -100%;
+    position: absolute;
+    background-color: #e27689;
+    animation: skill-bar-fill 2s ease-in-out forwards;
+}
+
+:root {
+    --skill-bar-lenght: 0%;
+}
+
+.skills_bar--10::after {
+    --skill-bar-lenght: 10%;
+}
+
+.skills_bar--20::after {
+    --skill-bar-lenght: 20%;
+}
+
+.skills_bar--30::after {
+    --skill-bar-lenght: 30%;
+}
+
+.skills_bar--40::after {
+    --skill-bar-lenght: 40%;
+}
+
+.skills_bar--50::after {
+    --skill-bar-lenght: 50%;
+}
+
+.skills_bar--60::after {
+    --skill-bar-lenght: 60%;
+}
+
+.skills_bar--70::after {
+    --skill-bar-lenght: 70%;
+}
+
+.skills_bar--80::after {
+    --skill-bar-lenght: 80%;
+}
+
+.skills_bar--90::after {
+    --skill-bar-lenght: 90%;
+}
+
+.skills_bar--100::after {
+    --skill-bar-lenght: 100%;
+}
+
+@keyframes skill-bar-fill {
+    to {
+        transform: translateX(var(--skill-bar-lenght));
+    }    
+}
+
 #about header div::after {
     content: '</h2>';
     font-family: 'La Belle Aurore',cursive;
@@ -356,4 +430,17 @@
     transform: scale(1.1);
     /*filter: brightness(100%);*/
     filter: grayscale(0);
+}
+
+.chart {
+    margin-bottom: 2rem;
+}
+
+.chart footer div {
+    width: 0;
+    height: 100%;
+    background-color: #08fdd8;
+    -webkit-transition: width 1.3s ease-out;
+    -o-transition: width 1.3s ease-out;
+    transition: width 1.3s ease-out;
 }
