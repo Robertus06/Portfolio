@@ -189,7 +189,7 @@ input, select, textarea {
 	}
 
 	.allprojects:hover {
-		color: #ff4869;
+		color: #ff607d;
 	}
 
 		a:hover {
@@ -1986,7 +1986,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover, .btn-abrir-popup:hover,
 		.button:hover {
-			background-color: #ff4869;
+			background-color: #ff607d;
 		}
 
 		input[type="button"]:active,
@@ -1994,7 +1994,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active, .btn-abrir-popup:active,
 		.button:active {
-			background-color: #ff002f;
+			background-color: #ff3459;
 		}
 
 /* Item */
@@ -2114,7 +2114,7 @@ input, select, textarea {
 				}
 
 				#header .icons a:active {
-					color: #ff002f;
+					color: #ff3459;
 				}
 
 	#logo {
@@ -2238,7 +2238,7 @@ input, select, textarea {
 				}
 
 				#footer .icons a:active {
-					color: #ff002f;
+					color: #ff3459;
 				}
 
 
@@ -2283,7 +2283,7 @@ input, select, textarea {
 		}
 
 		.popup .icons a:active {
-			color: #ff002f;
+			color: #ff3459;
 		}
 
 		#main > section {
