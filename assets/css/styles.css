@@ -150,8 +150,8 @@
 
 .tarjet {
     padding: 1em 1em 1em 1em;
-    background-color: #1b1d1d;
     /*background-color: #121212;*/
+    background-color: #161818;
     border-radius: 1em;
     height: 100%;
 }
@@ -439,6 +439,8 @@
 }
 
 .img-hover-zoom {
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
     height: 100%;
     width: 100%;
     overflow: hidden;
