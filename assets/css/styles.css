@@ -148,8 +148,16 @@
     margin-top: 0.5rem;
 }
 
+.tarjet {
+    padding: 1em 1em 1em 1em;
+    background-color: #1b1d1d;
+    /*background-color: #121212;*/
+    border-radius: 1em;
+    height: 100%;
+}
+
 .skillsDiv {
-    padding: 1em 0 0 1em;
+    padding: 0 0 1em 1em;
 }
 
 .skills_tech {
@@ -158,7 +166,7 @@
 
 .skills_bar, .skills_bar::after {
     position: relative;
-    width: 100%;
+    width: 90%;
     height: 0.2em;
     background-color: #323535;
     overflow: hidden;
@@ -166,7 +174,7 @@
 
 .skills_bar::after {
     content: "";
-    left: -100%;
+    left: -90%;
     position: absolute;
     background-color: #e27689;
     animation: skill-bar-fill 2s ease-in-out forwards;
