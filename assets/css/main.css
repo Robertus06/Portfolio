@@ -2005,8 +2005,8 @@ input, select, textarea {
 	}
 
 		.item header {
-			/*background: #121212;*/
-			background: #161818;
+			background: #121212;
+			/*background: #161818;*/
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
