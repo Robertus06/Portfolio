@@ -473,12 +473,4 @@
 
 .hobbies {
     text-align: center;
-    font-size: 1.5rem;
-}
-
-@media screen and (max-width: 736px) {
-    .hobbies {
-        text-align: center;
-        font-size: 1.2rem;
-    }
 }
