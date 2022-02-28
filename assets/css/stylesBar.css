@@ -1,0 +1,229 @@
+.tarjet {
+    padding: 1em 1em 1em 1em;
+    /*background-color: #121212;*/
+    background-color: #161818;
+    border-radius: 1em;
+    height: 100%;
+}
+
+.skillsDiv {
+    padding: 0 1em 1em 1em;
+}
+
+.skills_tech {
+    margin: 0 0 0 0;
+}
+
+.skills_bar, .skills_bar::after {
+    position: relative;
+    width: 100%;
+    height: 0.2em;
+    background-color: #323535;
+    overflow: hidden;
+}
+
+.skills_bar::after {
+    content: "";
+    left: -100%;
+    position: absolute;
+    background-color: #e27689;
+    animation: skill-bar-fill 2s ease-in-out forwards;
+}
+
+.red::after {
+    content: "";
+    left: -100%;
+    position: absolute;
+    background-color: #ff607d;
+    animation: skill-bar-fill 2s ease-in-out forwards;
+}
+
+.darkRed::after {
+    content: "";
+    left: -100%;
+    position: absolute;
+    background-color: #ff3459;
+    animation: skill-bar-fill 2s ease-in-out forwards;
+}
+
+:root {
+    --skill-bar-lenght: 0%;
+}
+
+.skills_bar--10::after {
+    --skill-bar-lenght: 10%;
+}
+
+.skills_bar--20::after {
+    --skill-bar-lenght: 20%;
+}
+
+.skills_bar--30::after {
+    --skill-bar-lenght: 30%;
+}
+
+.skills_bar--40::after {
+    --skill-bar-lenght: 40%;
+}
+
+.skills_bar--50::after {
+    --skill-bar-lenght: 50%;
+}
+
+.skills_bar--60::after {
+    --skill-bar-lenght: 60%;
+}
+
+.skills_bar--70::after {
+    --skill-bar-lenght: 70%;
+}
+
+.skills_bar--80::after {
+    --skill-bar-lenght: 80%;
+}
+
+.skills_bar--90::after {
+    --skill-bar-lenght: 90%;
+}
+
+.skills_bar--100::after {
+    --skill-bar-lenght: 100%;
+}
+
+@keyframes skill-bar-fill {
+    to {
+        transform: translateX(var(--skill-bar-lenght));
+    }    
+}
+
+.circularProgressTeam {
+    --skill-bar-rotate: 144deg;
+    --skill-bar-rotate-negative: -144deg;
+    background: linear-gradient(
+        0deg,
+        #ff3459 50%,
+        #323535 50%
+    );
+}
+
+.circularProgressLeader {
+    --skill-bar-rotate: 162deg;
+    --skill-bar-rotate-negative: -162deg;
+    background: linear-gradient(
+        0deg,
+        #ff607d 50%,
+        #323535 50%
+    );
+}
+
+.circularProgressOrg {
+    --skill-bar-rotate: 180deg;
+    --skill-bar-rotate-negative: -179deg;
+    background: linear-gradient(
+        0deg,
+        #e27689 50%,
+        #323535 50%
+    );
+}
+
+.circularProgressTeam, .circularProgressTeam::after, .circularProgressTeam::before,
+.circularProgressLeader, .circularProgressLeader::after, .circularProgressLeader::before,
+.circularProgressOrg, .circularProgressOrg::after, .circularProgressOrg::before {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+
+.circularProgressTeam, .circularProgressLeader, .circularProgressOrg {
+    margin: auto;
+    margin-top: 2rem;
+    position: relative;
+    animation: rotation-skill 2s ease-in-out forwards;
+}
+
+.circularProgressTeam::after, .circularProgressTeam::before,
+.circularProgressLeader::after, .circularProgressLeader::before,
+.circularProgressOrg::after, .circularProgressOrg::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    text-align: center;
+}
+
+.circularProgressTeam::before,
+.circularProgressLeader::before,
+.circularProgressOrg::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 2em;
+    line-height: 7rem;
+    
+    padding: 0.3em;
+    box-sizing: border-box;
+    background: #161818 content-box;
+    animation: rotation-skill-before 2s ease-in-out forwards;
+}
+
+.circularProgressTeam::before {
+    content: "\f0c0";
+}
+
+.circularProgressLeader::before {
+    /*content: "\f0a1";*/
+    /*content: "\f508";*/
+    content: "\f6de";
+}
+
+.circularProgressOrg::before {
+    content: "\f46d";
+}
+
+.circularProgressTeam::after,
+.circularProgressLeader::after,
+.circularProgressOrg::after {
+    line-height: 15rem;
+
+    background: linear-gradient(
+        transparent 50%,
+        #161818 50%
+    );
+    transform: scale(1.1);
+    animation: rotation-skill-after 2s ease-in-out forwards;
+}
+
+.circularProgressTeam::after {
+    content: "Team work";
+}
+
+.circularProgressLeader::after {
+    content: "Leadership";
+}
+
+.circularProgressOrg::after {
+    content: "Organization";
+}
+
+:root {
+    --skill-bar-rotate: 90deg;
+    --skill-bar-rotate-negative: -90deg;
+    --skill-bar-scale: 1.1;
+}
+
+@keyframes rotation-skill {
+    to {
+        transform: rotate(var(--skill-bar-rotate));
+    }    
+}
+
+@keyframes rotation-skill-after {
+    to {
+        transform: rotate(var(--skill-bar-rotate-negative)) scale(var(--skill-bar-scale));
+    }    
+}
+
+@keyframes rotation-skill-before {
+    to {
+        transform: rotate(var(--skill-bar-rotate-negative));
+    }    
+}
