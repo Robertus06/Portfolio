@@ -3,6 +3,7 @@
 /* ------------------------- */
 
 .overlay {
+	z-index: 9999999;
 	background: rgba(0,0,0,.8);
 	position: fixed;
 	top: 0;
