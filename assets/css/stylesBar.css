@@ -238,16 +238,10 @@
 
 @media screen and (min-width: 961px) and (max-width: 1320px) {
     /*Cambiar*/
-    .tarjet {
-        background-color: #b4ff76;
-    }
 }
 
 @media screen and (max-width: 960px) {
     /*Cambiar*/
-    .tarjet {
-        background-color: #89ffff;
-    }
 }
 
 @media screen and (max-width: 736px) {
