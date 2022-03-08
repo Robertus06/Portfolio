@@ -183,6 +183,7 @@
 .circularProgressLeader::after,
 .circularProgressOrg::after {
     line-height: 15rem;
+    font-size: 1.1em;
 
     background: linear-gradient(
         transparent 50%,
@@ -237,13 +238,73 @@
 }
 
 @media screen and (min-width: 961px) and (max-width: 1320px) {
-    /*Cambiar*/
+    .circularProgressTeam, .circularProgressTeam::after, .circularProgressTeam::before,
+    .circularProgressLeader, .circularProgressLeader::after, .circularProgressLeader::before,
+    .circularProgressOrg, .circularProgressOrg::after, .circularProgressOrg::before {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .circularProgressTeam::before,
+    .circularProgressLeader::before,
+    .circularProgressOrg::before {
+        font-size: 1.8em;
+        line-height: 5.25rem;
+        padding: 0.25em;
+    }
+    
+    .circularProgressTeam::after,
+    .circularProgressLeader::after,
+    .circularProgressOrg::after {
+        font-size: 1em;
+        line-height: 11.25rem;
+    }
 }
 
 @media screen and (max-width: 960px) {
-    /*Cambiar*/
+    .circularProgressTeam, .circularProgressTeam::after, .circularProgressTeam::before,
+    .circularProgressLeader, .circularProgressLeader::after, .circularProgressLeader::before,
+    .circularProgressOrg, .circularProgressOrg::after, .circularProgressOrg::before {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .circularProgressTeam::before,
+    .circularProgressLeader::before,
+    .circularProgressOrg::before {
+        font-size: 1.5em;
+        line-height: 4.5rem;
+        padding: 0.25em;
+    }
+    
+    .circularProgressTeam::after,
+    .circularProgressLeader::after,
+    .circularProgressOrg::after {
+        font-size: 0.8em;
+        line-height: 9.5rem;
+    }
 }
 
 @media screen and (max-width: 736px) {
+    .circularProgressTeam, .circularProgressTeam::after, .circularProgressTeam::before,
+    .circularProgressLeader, .circularProgressLeader::after, .circularProgressLeader::before,
+    .circularProgressOrg, .circularProgressOrg::after, .circularProgressOrg::before {
+        width: 12rem;
+        height: 12rem;
+    }
 
+    .circularProgressTeam::before,
+    .circularProgressLeader::before,
+    .circularProgressOrg::before {
+        font-size: 2em;
+        line-height: 7rem;
+        padding: 0.3em;
+    }
+    
+    .circularProgressTeam::after,
+    .circularProgressLeader::after,
+    .circularProgressOrg::after {
+        font-size: 1.3em;
+        line-height: 15rem;
+    }
 }
