@@ -66,10 +66,6 @@
 	color: #fff;
 }
 
-.popup .animIcon {
-	opacity: 0;
-}
-
 .popup h3 {
 	font-size: 36px;
 	font-weight: 600;
@@ -99,7 +95,6 @@
 /* ANIMACIONES */
 /* ------------------------- */
 .popup.active {	transform: scale(1); opacity: 1; }
-.popup.active .animIcon { animation: entradaTitulo .8s ease .5s forwards; }
 .popup.active h3 { animation: entradaTitulo .8s ease .5s forwards; }
 .popup.active h4 { animation: entradaSubtitulo .8s ease .5s forwards; }
 .popup.active .icons { animation: entradaInputs 1s linear 1s forwards; }

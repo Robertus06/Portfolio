@@ -2331,7 +2331,14 @@ input, select, textarea {
 			#main > section.one {
 				position: relative;
 				background-color: #81918E;
-				background-image: url("../../images/banner.jpg");
+				background-image: url("../../images/banner.gif");
+				/*background-image: url("../../images/banner.jpg");*/
+
+				/* Create the parallax scrolling effect */
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
 			}
 
 			#main > section.two {
