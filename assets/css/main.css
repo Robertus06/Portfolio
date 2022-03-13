@@ -2332,7 +2332,6 @@ input, select, textarea {
 				position: relative;
 				background-color: #81918E;
 				background-image: url("../../images/banner.jpg");
-
 				/* Create the parallax scrolling effect */
 				background-attachment: fixed;
 				background-position: center;
