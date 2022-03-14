@@ -6,6 +6,21 @@
     height: 100%;
 }
 
+.tarjetInfo{
+    padding-left: 1em;
+    margin-bottom: 0em;
+}
+
+.animIcon{
+    width: 8em;
+    height: 8em;
+}
+
+.animIcon2{
+    width: 9em;
+    height: 11em;
+}
+
 .skillsDiv {
     padding: 0 1em 1em 1em;
 }
@@ -306,5 +321,22 @@
     .circularProgressOrg::after {
         font-size: 1.3em;
         line-height: 15rem;
+    }
+
+    .tarjetInfo{
+        padding-left: 0.5em;
+        margin-bottom: 0em;
+    }
+
+    .animIcon{
+        width: 7em;
+        height: 7em;
+        transform: translateX(-1em);
+    }
+
+    .animIcon2{
+        width: 7em;
+        height: 10em;
+        transform: translateX(-1em);
     }
 }

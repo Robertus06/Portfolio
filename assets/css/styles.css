@@ -168,6 +168,26 @@
     margin-left: -1rem;
 }
 
+#about #sectionImg::before {
+    content: '<section>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -0.5rem;
+    margin-left: -1rem;
+}
+
+#about #sectionImg::after {
+    content: '</section>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: 0.5rem;
+}
+
 #about #info::before {
     content: '<p>';
     font-family: 'La Belle Aurore',cursive;
@@ -320,6 +340,30 @@
     margin-bottom: 3em;
 }
 
+#contact #sectionImg::before {
+    content: '<section>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -0.5rem;
+    margin-left: -1rem;
+}
+
+#contact #sectionImg::after {
+    content: '</section>';
+    font-family: 'La Belle Aurore',cursive;
+    color: #515152;
+    font-size: 18px;
+    position: absolute;
+    margin-left: -1rem;
+    margin-top: 0.5rem;
+}
+
+#contact #sectionImg{
+    margin-bottom: 3em;
+}
+
 #contact #form::before {
     content: '<form>';
     font-family: 'La Belle Aurore',cursive;
@@ -339,6 +383,7 @@
     margin-top: 0.5rem;
     margin-left: -1rem;
 }
+
 
 .img-hover-zoom {
     border-top-left-radius: 0.5em;
