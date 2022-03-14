@@ -339,7 +339,7 @@
     .animIcon{
         width: 6em;
         height: 6em;
-        transform: translateX(-0.1em);
+        transform: translateX(-0.1em); 
     }
 
     .animIcon2{
